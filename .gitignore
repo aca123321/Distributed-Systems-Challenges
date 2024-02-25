@@ -1,0 +1,4 @@
+store/*
+logs/*
+maelstrom/store/*
+learning-golang/*
