@@ -3,19 +3,32 @@ package main
 import (
     "encoding/json"
     "log"
+		"path/filepath"
 		"os"
+		"runtime"
+		"fmt"
 
     maelstrom "github.com/jepsen-io/maelstrom/demo/go"
 )
 
-func main() {
-	n := maelstrom.NewNode()
-	file, err := os.OpenFile("/Users/aca123321/Desktop/Personal/Fly io distriibuted systems challenges/logs/echo_logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+func initLogging() {
+	_, curfilename, _, ok := runtime.Caller(0)
+	if !ok {
+		fmt.Println("Error: Unable to get the current file path")
+		return
+	}
+	logfile_path := filepath.Join(filepath.Dir(curfilename), "../logs/echo_log.txt")
+	file, err := os.OpenFile(logfile_path, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal(err)
 	}
 	log.SetOutput(file)
+}
 
+func main() {
+	initLogging()
+
+	n := maelstrom.NewNode()
 	n.Handle("echo", func(msg maelstrom.Message) error {
 			// Unmarshal the message body as an loosely-typed map.
 			var body map[string]any
@@ -23,7 +36,6 @@ func main() {
 					return err
 			}
 
-			log.Println("REPLYING from node 1")
 			// Update the message type to return back.
 			body["type"] = "echo_ok"
 

@@ -6,19 +6,34 @@ import (
 	"io/ioutil"
 	"strconv"
 	"os"
+	"path/filepath"
+	"runtime"
+	"fmt"
 
 	maelstrom "github.com/jepsen-io/maelstrom/demo/go"
 	filelock "github.com/zbiljic/go-filelock"
 )
 
-var id_filename string = "/Users/aca123321/Desktop/Personal/Fly io distriibuted systems challenges/utils/id.txt"
+var curfilename string
+var ok bool
 
-func main() {
-	file, err := os.OpenFile("/Users/aca123321/Desktop/Personal/Fly io distriibuted systems challenges/logs/unique_id_generation_logs.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+func initLogging() {
+	_, curfilename, _, ok = runtime.Caller(0)
+	if !ok {
+		fmt.Println("Error: Unable to get the current file path")
+		return
+	}
+	logfile_path := filepath.Join(filepath.Dir(curfilename), "../logs/unique_id_generation_log.txt")
+	file, err := os.OpenFile(logfile_path, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		log.Fatal(err)
 	}
 	log.SetOutput(file)
+}
+
+func main() {
+	initLogging()
+	id_filename := filepath.Join(filepath.Dir(curfilename), "../utils/id.txt")
 
 	lock, err := filelock.New(id_filename)
 	if err != nil {
