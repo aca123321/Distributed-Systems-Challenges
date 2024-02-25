@@ -1,0 +1,51 @@
+2024/02/25 20:00:07 Received {c1 n0 {"type":"init","node_id":"n0","node_ids":["n0","n1"],"msg_id":1}}
+2024/02/25 20:00:07 Node n0 initialized
+2024/02/25 20:00:07 Sent {"src":"n0","dest":"c1","body":{"in_reply_to":1,"type":"init_ok"}}
+2024/02/25 20:00:07 Received {c5 n0 {"echo":"Please echo 121","type":"echo","msg_id":1}}
+2024/02/25 20:00:07 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 121","in_reply_to":1,"msg_id":1,"type":"echo_ok"}}
+2024/02/25 20:00:07 Received {c5 n0 {"echo":"Please echo 47","type":"echo","msg_id":2}}
+2024/02/25 20:00:07 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 47","in_reply_to":2,"msg_id":2,"type":"echo_ok"}}
+2024/02/25 20:00:07 Received {c5 n0 {"echo":"Please echo 60","type":"echo","msg_id":3}}
+2024/02/25 20:00:07 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 60","in_reply_to":3,"msg_id":3,"type":"echo_ok"}}
+2024/02/25 20:00:07 Received {c5 n0 {"echo":"Please echo 104","type":"echo","msg_id":4}}
+2024/02/25 20:00:07 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 104","in_reply_to":4,"msg_id":4,"type":"echo_ok"}}
+2024/02/25 20:00:08 Received {c5 n0 {"echo":"Please echo 67","type":"echo","msg_id":5}}
+2024/02/25 20:00:08 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 67","in_reply_to":5,"msg_id":5,"type":"echo_ok"}}
+2024/02/25 20:00:08 Received {c5 n0 {"echo":"Please echo 125","type":"echo","msg_id":6}}
+2024/02/25 20:00:08 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 125","in_reply_to":6,"msg_id":6,"type":"echo_ok"}}
+2024/02/25 20:00:08 Received {c5 n0 {"echo":"Please echo 26","type":"echo","msg_id":7}}
+2024/02/25 20:00:08 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 26","in_reply_to":7,"msg_id":7,"type":"echo_ok"}}
+2024/02/25 20:00:08 Received {c5 n0 {"echo":"Please echo 96","type":"echo","msg_id":8}}
+2024/02/25 20:00:08 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 96","in_reply_to":8,"msg_id":8,"type":"echo_ok"}}
+2024/02/25 20:00:10 Received {c5 n0 {"echo":"Please echo 2","type":"echo","msg_id":9}}
+2024/02/25 20:00:10 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 2","in_reply_to":9,"msg_id":9,"type":"echo_ok"}}
+2024/02/25 20:00:10 Received {c5 n0 {"echo":"Please echo 35","type":"echo","msg_id":10}}
+2024/02/25 20:00:10 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 35","in_reply_to":10,"msg_id":10,"type":"echo_ok"}}
+2024/02/25 20:00:10 Received {c5 n0 {"echo":"Please echo 51","type":"echo","msg_id":11}}
+2024/02/25 20:00:10 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 51","in_reply_to":11,"msg_id":11,"type":"echo_ok"}}
+2024/02/25 20:00:12 Received {c5 n0 {"echo":"Please echo 77","type":"echo","msg_id":12}}
+2024/02/25 20:00:12 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 77","in_reply_to":12,"msg_id":12,"type":"echo_ok"}}
+2024/02/25 20:00:12 Received {c5 n0 {"echo":"Please echo 65","type":"echo","msg_id":13}}
+2024/02/25 20:00:12 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 65","in_reply_to":13,"msg_id":13,"type":"echo_ok"}}
+2024/02/25 20:00:12 Received {c5 n0 {"echo":"Please echo 77","type":"echo","msg_id":14}}
+2024/02/25 20:00:12 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 77","in_reply_to":14,"msg_id":14,"type":"echo_ok"}}
+2024/02/25 20:00:12 Received {c5 n0 {"echo":"Please echo 80","type":"echo","msg_id":15}}
+2024/02/25 20:00:12 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 80","in_reply_to":15,"msg_id":15,"type":"echo_ok"}}
+2024/02/25 20:00:12 Received {c5 n0 {"echo":"Please echo 106","type":"echo","msg_id":16}}
+2024/02/25 20:00:12 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 106","in_reply_to":16,"msg_id":16,"type":"echo_ok"}}
+2024/02/25 20:00:13 Received {c5 n0 {"echo":"Please echo 25","type":"echo","msg_id":17}}
+2024/02/25 20:00:13 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 25","in_reply_to":17,"msg_id":17,"type":"echo_ok"}}
+2024/02/25 20:00:13 Received {c5 n0 {"echo":"Please echo 94","type":"echo","msg_id":18}}
+2024/02/25 20:00:13 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 94","in_reply_to":18,"msg_id":18,"type":"echo_ok"}}
+2024/02/25 20:00:13 Received {c5 n0 {"echo":"Please echo 110","type":"echo","msg_id":19}}
+2024/02/25 20:00:13 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 110","in_reply_to":19,"msg_id":19,"type":"echo_ok"}}
+2024/02/25 20:00:13 Received {c5 n0 {"echo":"Please echo 40","type":"echo","msg_id":20}}
+2024/02/25 20:00:13 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 40","in_reply_to":20,"msg_id":20,"type":"echo_ok"}}
+2024/02/25 20:00:14 Received {c5 n0 {"echo":"Please echo 35","type":"echo","msg_id":21}}
+2024/02/25 20:00:14 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 35","in_reply_to":21,"msg_id":21,"type":"echo_ok"}}
+2024/02/25 20:00:15 Received {c5 n0 {"echo":"Please echo 48","type":"echo","msg_id":22}}
+2024/02/25 20:00:15 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 48","in_reply_to":22,"msg_id":22,"type":"echo_ok"}}
+2024/02/25 20:00:16 Received {c5 n0 {"echo":"Please echo 4","type":"echo","msg_id":23}}
+2024/02/25 20:00:16 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 4","in_reply_to":23,"msg_id":23,"type":"echo_ok"}}
+2024/02/25 20:00:16 Received {c5 n0 {"echo":"Please echo 6","type":"echo","msg_id":24}}
+2024/02/25 20:00:16 Sent {"src":"n0","dest":"c5","body":{"echo":"Please echo 6","in_reply_to":24,"msg_id":24,"type":"echo_ok"}}

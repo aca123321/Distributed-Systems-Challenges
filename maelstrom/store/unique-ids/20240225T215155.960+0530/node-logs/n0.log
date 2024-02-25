@@ -1,0 +1,11 @@
+panic: assignment to entry in nil map
+
+goroutine 7 [running]:
+main.main.func1({{0xc000012398, 0x2}, {0xc00001239a, 0x2}, {0xc00001c0a0, 0x1e, 0x20}})
+	/Users/aca123321/Desktop/Personal/Fly io distriibuted systems challenges/unique-id-generation/main.go:40 +0x13a
+github.com/jepsen-io/maelstrom/demo/go.(*Node).handleMessage(0xc000112000, 0x0?, {{0xc000012398, 0x2}, {0xc00001239a, 0x2}, {0xc00001c0a0, 0x1e, 0x20}})
+	/Users/aca123321/go/pkg/mod/github.com/jepsen-io/maelstrom/demo/go@v0.0.0-20231231190402-2674df7c1076/node.go:151 +0x8d
+github.com/jepsen-io/maelstrom/demo/go.(*Node).Run.func2()
+	/Users/aca123321/go/pkg/mod/github.com/jepsen-io/maelstrom/demo/go@v0.0.0-20231231190402-2674df7c1076/node.go:129 +0x7d
+created by github.com/jepsen-io/maelstrom/demo/go.(*Node).Run in goroutine 1
+	/Users/aca123321/go/pkg/mod/github.com/jepsen-io/maelstrom/demo/go@v0.0.0-20231231190402-2674df7c1076/node.go:127 +0x4f8
