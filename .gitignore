@@ -2,3 +2,4 @@ store/*
 logs/*
 maelstrom/store/*
 learning-golang/*
+maelstrom/demo/*
